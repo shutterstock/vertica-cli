@@ -6,7 +6,7 @@ var Table = require('cli-table');
 var optimist = require('optimist');
 
 var options = optimist
-	.usage('vertica -u user -p password -h host')
+	.usage('vertica -u user -h host')
 	.options('u', { demand: true, alias: 'user' })
 	.options('h', { demand: true, alias: 'host' })
 	.options('d', { demand: false, alias: 'database' })
