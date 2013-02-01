@@ -1,0 +1,26 @@
+{
+  "name": "vertical-cli",
+  "version": "0.1.0",
+  "preferGlobal": true,
+  "author": "David Chester <dchester@shutterstock.com>",
+  "description": "Command-line Vertica client in Node.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shutterstock/vertica-cli.git"
+  },
+  "keywords": [
+    "cli",
+    "vertica",
+    "client"
+  ],
+  "dependencies" : {
+    "vertica":  "*",
+    "pw": "*",
+    "optimist": "*",
+    "cli-table": "*"
+  },
+  "engines": {
+    "node": ">=0.6"
+  }
+}
+
