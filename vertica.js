@@ -6,9 +6,10 @@ var Table = require('cli-table');
 var optimist = require('optimist');
 
 var options = optimist
-	.usage('vertica -u user -h host')
+	.usage('vertica -u user -h host -p port')
 	.options('u', { demand: true, alias: 'user' })
 	.options('h', { demand: true, alias: 'host' })
+	.options('p', { demand: false, alias: 'port' })
 	.options('d', { demand: false, alias: 'database' })
 	.options('v', { demand: false, alias: 'verbose' })
 	.argv;
@@ -21,7 +22,7 @@ var Client = function(options) {
 
 		this.options = {};
 
-		['user', 'host', 'database', 'verbose'].forEach(function(option) {
+		['user', 'host', 'database', 'verbose', 'port'].forEach(function(option) {
 			this.options[option] = options[option];
 		}.bind(this));
 	},
@@ -32,6 +33,7 @@ var Client = function(options) {
 
 			this.connection = Vertica.connect({
 				host: this.options.host,
+				port: this.options.port,
 				user: this.options.user,
 				password: password,
 				database: this.options.database
