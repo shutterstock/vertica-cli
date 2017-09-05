@@ -13,14 +13,14 @@
     "vertica",
     "client"
   ],
-  "dependencies" : {
-    "vertica":  "*",
+  "dependencies": {
+    "vertica": "*",
     "pw": "*",
     "optimist": "*",
     "cli-table": "*"
   },
   "engines": {
     "node": ">=0.6"
-  }
+  },
+  "license": "MIT"
 }
-
