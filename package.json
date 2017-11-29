@@ -22,5 +22,12 @@
   "engines": {
     "node": ">=0.6"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": "https://github.com/shutterstock/vertica-cli",
+  "bugs": {
+    "url": "https://github.com/shutterstock/vertica-cli/issues"
+  },
+  "contributors": [
+    "David Chester <dchester@shutterstock.com>"
+  ]
 }
